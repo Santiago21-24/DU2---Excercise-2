@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 4</title>
+</head>
+    <body>
+        <h2>Welcome to the 24x7 Compostela Fitness Club : Courts Reservation Page!!</h2>
+        <img src="./favicon_io (7)/android-chrome-512x512.png" alt="planificacion" width = "250" tittle = "planificacion">
+        <form action="member.php">
+            <fieldset>
+            <legend>Member Demographics</legend>
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <p>Are you a Member?</p>
+            <label for="male">Member: </label>
+            <input type="radio" name="type" id="member" value="non-member">
+            <label for="non-member">Non-Member: </label>
+            <input type="radio" name="type" id="non-member" value="non-member">
+            <br></br>
+            <label for="Email">Email </label>
+            <input type="email" name="email" id="email">
+            <br></br>
+            </fieldset>
+            Facility
+            <select id="facility" name="facility">
+            <option value="" selected="select">Indoor football</option>
+            <option value="badminton">Badminton</option>
+            <option value="squash">Squash</option>
+            <option value="racquetball">Racquetball</option>
+            <option value="basquetball">Basquetball</option>
+            </select><br><br>
+            <p>Select a reservation date and time:</p>
+            <input name="date" type="date" value="date" id="date"/>
+            <input name="time" type="time" value="time" id="time"/>
+            <br></br>
+            <input name="agree" type="checkbox" value="agree" id="agree"/>
+            <label for="agree">I agree to the club's reservation policy </label>
+            <br></br>
+            <input type="submit" name="submit" value="submit"/>
+        </form>
+    </body>
+</html>
